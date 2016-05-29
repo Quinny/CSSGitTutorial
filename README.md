@@ -86,25 +86,28 @@ Example usages:
 
 `git add assignment1/` - adds all files in the assignment1 folder to the next commit
 
+`git add .` - add everything in the current directory (recursively) to the next commit
+
 ### git commit -m [message]
 Create a commit (snapshot) of your code in its current state.  This state can then
-be recalled.  The message is a short discription explaining how your code changed
+be recalled.  The message is a short description explaining how your code changed
 from its previous state.
 
 Example usage:
 
 `git commit -m "added unicode support"`
 
-### git push
-Push your code to a remote repository, such as github
+### git push [remote] [branch]
+Push your code to a remote repository, such as github.
 
 Example usage:
 
-`git push`
+`git push origin master` - If you followed the instructions github provided,
+your remote will be named origin
 
 ### Full example
 
 * Make a change to assignment1.c
-* `git add assignment1.c`
-* `git commit -m "finished assignment, output is correct"`
-* `git push`
+* `git add assignment1.c` - add it to the next commit
+* `git commit -m "finished assignment, output is correct"` - make the commit
+* `git push origin master` - push the code to github
