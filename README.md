@@ -72,4 +72,39 @@ at a terminal
 to get free/discounted access to a ton of different services
 
 ### 3. Create your first repository
+* Go to your profile and create your very first repository
+* Open a terminal and follow the instructions provided by github
 
+## Basic Commands
+
+### git add [filename / folder]
+Adds a file/folder to be included in the next commit.
+
+Example usages:
+
+`git add assignment1.c` - adds the file assignment1.c to the next commit
+
+`git add assignment1/` - adds all files in the assignment1 folder to the next commit
+
+### git commit -m [message]
+Create a commit (snapshot) of your code in its current state.  This state can then
+be recalled.  The message is a short discription explaining how your code changed
+from its previous state.
+
+Example usage:
+
+`git commit -m "added unicode support"`
+
+### git push
+Push your code to a remote repository, such as github
+
+Example usage:
+
+`git push`
+
+### Full example
+
+* Make a change to assignment1.c
+* `git add assignment1.c`
+* `git commit -m "finished assignment, output is correct"`
+* `git push`
