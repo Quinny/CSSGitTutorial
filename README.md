@@ -105,9 +105,66 @@ Example usage:
 `git push origin master` - If you followed the instructions github provided,
 your remote will be named origin
 
+### git log
+View a log of previous commits
+
+Example usage:
+
+`git log`
+
+Example Output:
+
+    commit d8bd2e8dad890fa84da47fa11bb6fb930c4c9544
+    Author: Quinn Perfetto <thequinnftw@gmail.com>
+    Date:   Sun May 29 13:54:16 2016 -0700
+
+        spelling
+
+    commit d663ec8807c3f74cbad90c50506d84b7680d1684
+    Author: Quinn Perfetto <thequinnftw@gmail.com>
+    Date:   Sun May 29 13:48:42 2016 -0700
+
+        added basic usage
+
+    commit dbe9bcf19ca2564342c64a047b2879c321e9657b
+    Author: Quinn Perfetto <thequinnftw@gmail.com>
+    Date:   Sat May 28 18:44:00 2016 -0700
+
+        added installation instructions
+
+    commit 18b4e5b6004b7b1b13f83815bec7e59cb05a9bec
+    Author: Quinn Perfetto <thequinnftw@gmail.com>
+    Date:   Sat May 28 18:17:17 2016 -0700
+
+        added collaboration section
+
+    commit 227f9cc263de04590d10184dfa80ad79cc776543
+    Author: Quinn Perfetto <thequinnftw@gmail.com>
+    Date:   Sat May 28 17:00:10 2016 -0700
+
+        First commit, style check
+
+
+### git checkout [-b [branch name]] [branch/commit]
+Move your state to a previous commit (ignore the -b and branch name for now,
+that will be covered in the next section).
+
+Example Usage
+
+`git checkout db0e9b` - rollback to the "added installation instructions" commit
+above, only a small prefix of the commit ID is needed
+
 ### Full example
 
 * Make a change to assignment1.c
 * `git add assignment1.c` - add it to the next commit
 * `git commit -m "finished assignment, output is correct"` - make the commit
 * `git push origin master` - push the code to github
+
+## Branching
+Up until now you have probably envisioned your commit history as linear,
+but git provides **branching** functionality.  This makes it easier to
+collaborate as everyone working can create their own *branch* and then someone
+can *merge* the differing code together.
+
+![git branching](images/branching.png)
