@@ -26,7 +26,7 @@ have looked something like this:
 
 ![Git work flow graph](images/git-workflow.png)
 
-If you were using git you could have "committed" (take a snapshot)
+If you were using git you could have "committed" (taken a snapshot of)
 your working code.  This way no matter how bad you botch things during
 the refactor you can always revert back to it and get those partial marks
 on your assignment.
@@ -36,10 +36,40 @@ on your assignment.
 So Git is great at saving you from breaking your code, but it also works really
 well as a collaboration tool.  Instead of having to share code with your teammates
 via email like a caveman, you could use a shared repository.  Sites like Github
-(you are there as we speak) provide a repository sharing service.  Multiple
-users can push code to a single repository and collaborate together in writing
-code.  There are a few features that git provides, such as branching, that make
+(look at your address bar) provide a repository sharing service.  Multiple
+users can push code to a single repository and collaborate together without having
+to manually copy and paste all the files that anyone changes.
+There are a few features that git provides, such as branching, that make
 this less of a headache than it may seem.
 
 ![Git collaboration](https://git-scm.com/figures/18333fig0501-tn.png)
+
+## How do I git?
+
+### 1. Install git
+#### Windows Users
+
+* [Follow these instructions](https://help.github.com/articles/set-up-git/#platform-windows)
+
+Alternatively, dual boot linux OR SSH into the school server and follow the linux instructions.
+
+#### OSX Users
+
+* If you haven't already, [install Homebrew](http://brew.sh/)
+* Open a terminal and run `brew install git`
+
+#### Linux Users
+* If you are using a school terminal, or if you are SSH'd into your school
+account then you already have git installed
+* If you are using your own linux machine then you can install git via
+your package manager
+* Assuming that you are running ubuntu, run `sudo apt-get install git`
+at a terminal
+
+### 2. Make a Github account
+* Go to [Github.com](http://github.com) and sign up
+* *Optional:* apply for a [student developer pack](https://education.github.com/pack)
+to get free/discounted access to a ton of different services
+
+### 3. Create your first repository
 
