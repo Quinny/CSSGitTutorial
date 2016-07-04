@@ -1,7 +1,7 @@
 # First year challenge - Statistics Library
 
 Your challenge as a team is to write a small library that computes statistics
-that operate on a pairs of [arrays](http://www.tutorialspoint.com/cprogramming/c_arrays.htm).  You may assume that the arrays **do not** contain repeat elements,
+that operate on pairs of [arrays](http://www.tutorialspoint.com/cprogramming/c_arrays.htm).  You may assume that the arrays **do not** contain repeat elements,
 but they may be unsorted.
 
 *Feel free to write the code in the language you are most comfortable with, but
@@ -34,7 +34,7 @@ intersection_size(a, b, 3) == 0
 
 ## Union Size
 
-The number of unique elements between two lists.
+The number of unique elements across both lists.
 
 ```c
 int union_size(int a[], int b[], int n) {
