@@ -106,7 +106,7 @@ Example usage:
 your remote will be named origin
 
 ### git log
-View a log of previous commits
+View a log of previous commits.
 
 Example usage:
 
@@ -151,7 +151,7 @@ that will be covered in the next section).
 
 Example Usage
 
-`git checkout db0e9b` - rollback to the "added installation instructions" commit
+`git checkout dbe9b` - rollback to the "added installation instructions" commit
 above, only a small prefix of the commit ID is needed
 
 ### Full example
@@ -168,3 +168,51 @@ collaborate as everyone working can create their own *branch* and then someone
 can *merge* the differing code together.
 
 ![git branching](images/branching.png)
+
+A common practise is to always have working, stable code in the master branch.
+Anytime you need to make a change, create a new branch and work there until
+everything works.  After that, merge your branch into the master branch.
+
+## Creating a branch
+
+### git branch [branch name]
+Creates a branch on the current commit.
+
+Example usage:
+
+`git branch ui-update` - creates a branch named "ui-update"
+
+*Note: this does not change your branch, it only creates a new one*
+
+## Changing branches
+
+### git checkout [branch name]
+Changes to a given branch.
+
+Example usage:
+
+`git checkout ui-update` - switches to the branch created above
+
+*Note: although it may seem like your files are gone when you change branches,
+they aren't! git just hides them, you can get them back by switching back to
+your original branch.*
+
+## Merging branches
+
+### git merge [branch name]
+Merges the given branch into the current branch.
+
+Example usage:
+
+* `git checkout master` - switch into the master branch
+* `git merge ui-update` - merge ui-update into the current branch
+* `git branch -d ui-update` - delete the ui-update branch
+
+## Lots, and lots more
+There is a lot more content that could be discussed, but this should cover the
+basics of git.  More so, it is enough to get started on the challenge.
+
+# Challenge
+* [First years](challenges/first_year.md)
+* [Second years](challenges/second_year.md)
+* [Third and forth years](challenges/forth_year.md)
